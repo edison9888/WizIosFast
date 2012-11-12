@@ -11,6 +11,6 @@
 @interface WizFileManager : NSFileManager
 + (id)shareManager;
 
-+ (NSString*)documentsPath;
-- (BOOL)ensureFileExists:(NSString*)path;
++ (NSString*) documentsPath;
+- (BOOL) ensureFileExists:(NSString*)path;
 @end

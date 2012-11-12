@@ -11,7 +11,7 @@
 @implementation WizFileManager
 
 static WizFileManager* shareManager = nil;
-+ (id)shareManager
++ (id) shareManager
 {
     @synchronized(shareManager)
     {
@@ -22,7 +22,7 @@ static WizFileManager* shareManager = nil;
     }
 }
 
-+ (id)allocWithZone:(NSZone *)zone
++ (id) allocWithZone:(NSZone *)zone
 {
     return [[self shareManager]retain];
 }
@@ -33,7 +33,7 @@ static WizFileManager* shareManager = nil;
 
 
 
-+ (NSString*)documentsPath
++ (NSString*) documentsPath
 {
     static NSString* documentDirectory = nil;
     
@@ -42,12 +42,53 @@ static WizFileManager* shareManager = nil;
     
     return documentDirectory;
 }
-
-- (BOOL)ensureFileExists:(NSString*)path
+-(BOOL) ensurePathExists:(NSString*)path
+{
+	BOOL b = YES;
+    if (![self fileExistsAtPath:path])
+	{
+		NSError* err = nil;
+		b = [self createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&err];
+//		if (!b)
+//		{
+//			[WizGlobals reportError:err];
+//		}
+	}
+	return b;
+}
+- (BOOL) ensureFileExists:(NSString*)path
 {
     if (![self fileExistsAtPath:path]) {
         return [self createFileAtPath:path contents:nil attributes:nil];
     }
     return YES;
 }
+
+- (NSString*) objectFilePath:(NSString*)objectGuid
+{
+    NSString* accountPath = [self accountPath];
+    NSString* subName = [NSString stringWithFormat:@"%@",objectGuid];
+    NSString* path = [accountPath stringByAppendingPathComponent:subName];
+    [self ensureFileExists:path];
+    return path;
+}
+
+- (NSString*)accountPath
+{
+ //   return [self accountPathFor:[[WizAccountManager defaultManager] activeAccountUserId]];
+    return [WizFileManager documentsPath];
+}
+
+- (NSString*)accountPathFor:(NSString*)accountUserId
+{
+    NSString* documentPath = [WizFileManager documentsPath];
+    NSString* accountPath = [documentPath stringByAppendingPathComponent:accountUserId];
+    [self ensurePathExists:accountPath];
+    return accountPath;
+}
+
 @end
+
+
+
+

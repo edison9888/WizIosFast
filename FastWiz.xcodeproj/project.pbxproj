@@ -8,7 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7348CDE016509F1700D0E921 /* WizFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CDDF16509F1700D0E921 /* WizFileManager.m */; };
-		7348CDFD1650AFB900D0E921 /* NSString+XMLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CDFC1650AFB900D0E921 /* NSString+XMLExtensions.m */; };
+		7348CE061650C9C200D0E921 /* WizAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE051650C9C200D0E921 /* WizAccountManager.m */; };
+		7348CE091650C9F600D0E921 /* WizAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE081650C9F600D0E921 /* WizAccount.m */; };
+		7348CE0C1650D5F000D0E921 /* WizApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE0B1650D5F000D0E921 /* WizApi.m */; };
+		7348CE0F1650D65500D0E921 /* WizDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE0E1650D65500D0E921 /* WizDocument.m */; };
+		7348CE3F1650E69D00D0E921 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE321650E69D00D0E921 /* GDataXMLNode.m */; };
+		7348CE401650E69D00D0E921 /* NSString+XMLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE341650E69D00D0E921 /* NSString+XMLExtensions.m */; };
+		7348CE411650E69D00D0E921 /* XMLRPCConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE361650E69D00D0E921 /* XMLRPCConnection.m */; };
+		7348CE421650E69D00D0E921 /* XMLRPCEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE381650E69D00D0E921 /* XMLRPCEncoder.m */; };
+		7348CE431650E69D00D0E921 /* XMLRPCExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE3A1650E69D00D0E921 /* XMLRPCExtensions.m */; };
+		7348CE441650E69D00D0E921 /* XMLRPCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE3C1650E69D00D0E921 /* XMLRPCRequest.m */; };
+		7348CE451650E69D00D0E921 /* XMLRPCResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 7348CE3E1650E69D00D0E921 /* XMLRPCResponse.m */; };
 		737BE1901650976800DE3FC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737BE18F1650976800DE3FC3 /* UIKit.framework */; };
 		737BE1921650976800DE3FC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737BE1911650976800DE3FC3 /* Foundation.framework */; };
 		737BE1941650976800DE3FC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 737BE1931650976800DE3FC3 /* CoreGraphics.framework */; };
@@ -25,8 +35,28 @@
 /* Begin PBXFileReference section */
 		7348CDDE16509F1700D0E921 /* WizFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizFileManager.h; sourceTree = "<group>"; };
 		7348CDDF16509F1700D0E921 /* WizFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizFileManager.m; sourceTree = "<group>"; };
-		7348CDFB1650AFB900D0E921 /* NSString+XMLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLExtensions.h"; sourceTree = "<group>"; };
-		7348CDFC1650AFB900D0E921 /* NSString+XMLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLExtensions.m"; sourceTree = "<group>"; };
+		7348CE041650C9C200D0E921 /* WizAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizAccountManager.h; sourceTree = "<group>"; };
+		7348CE051650C9C200D0E921 /* WizAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizAccountManager.m; sourceTree = "<group>"; };
+		7348CE071650C9F600D0E921 /* WizAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizAccount.h; sourceTree = "<group>"; };
+		7348CE081650C9F600D0E921 /* WizAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizAccount.m; sourceTree = "<group>"; };
+		7348CE0A1650D5F000D0E921 /* WizApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizApi.h; sourceTree = "<group>"; };
+		7348CE0B1650D5F000D0E921 /* WizApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizApi.m; sourceTree = "<group>"; };
+		7348CE0D1650D65500D0E921 /* WizDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WizDocument.h; sourceTree = "<group>"; };
+		7348CE0E1650D65500D0E921 /* WizDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WizDocument.m; sourceTree = "<group>"; };
+		7348CE311650E69D00D0E921 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		7348CE321650E69D00D0E921 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		7348CE331650E69D00D0E921 /* NSString+XMLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XMLExtensions.h"; sourceTree = "<group>"; };
+		7348CE341650E69D00D0E921 /* NSString+XMLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XMLExtensions.m"; sourceTree = "<group>"; };
+		7348CE351650E69D00D0E921 /* XMLRPCConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCConnection.h; sourceTree = "<group>"; };
+		7348CE361650E69D00D0E921 /* XMLRPCConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCConnection.m; sourceTree = "<group>"; };
+		7348CE371650E69D00D0E921 /* XMLRPCEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCEncoder.h; sourceTree = "<group>"; };
+		7348CE381650E69D00D0E921 /* XMLRPCEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCEncoder.m; sourceTree = "<group>"; };
+		7348CE391650E69D00D0E921 /* XMLRPCExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCExtensions.h; sourceTree = "<group>"; };
+		7348CE3A1650E69D00D0E921 /* XMLRPCExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCExtensions.m; sourceTree = "<group>"; };
+		7348CE3B1650E69D00D0E921 /* XMLRPCRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCRequest.h; sourceTree = "<group>"; };
+		7348CE3C1650E69D00D0E921 /* XMLRPCRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCRequest.m; sourceTree = "<group>"; };
+		7348CE3D1650E69D00D0E921 /* XMLRPCResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLRPCResponse.h; sourceTree = "<group>"; };
+		7348CE3E1650E69D00D0E921 /* XMLRPCResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLRPCResponse.m; sourceTree = "<group>"; };
 		737BE18B1650976800DE3FC3 /* FastWiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastWiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		737BE18F1650976800DE3FC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		737BE1911650976800DE3FC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,6 +101,10 @@
 		7348CDD516509A9700D0E921 /* WizStruct */ = {
 			isa = PBXGroup;
 			children = (
+				7348CE071650C9F600D0E921 /* WizAccount.h */,
+				7348CE081650C9F600D0E921 /* WizAccount.m */,
+				7348CE0D1650D65500D0E921 /* WizDocument.h */,
+				7348CE0E1650D65500D0E921 /* WizDocument.m */,
 			);
 			name = WizStruct;
 			sourceTree = "<group>";
@@ -89,19 +123,43 @@
 			name = WizTool;
 			sourceTree = "<group>";
 		};
-		7348CDF71650AF5A00D0E921 /* xml-rpc */ = {
+		7348CE021650C98700D0E921 /* AccountCenter */ = {
 			isa = PBXGroup;
 			children = (
-				7348CDFB1650AFB900D0E921 /* NSString+XMLExtensions.h */,
-				7348CDFC1650AFB900D0E921 /* NSString+XMLExtensions.m */,
+				7348CE041650C9C200D0E921 /* WizAccountManager.h */,
+				7348CE051650C9C200D0E921 /* WizAccountManager.m */,
 			);
-			name = "xml-rpc";
+			name = AccountCenter;
+			sourceTree = "<group>";
+		};
+		7348CE301650E69C00D0E921 /* xml-rpc */ = {
+			isa = PBXGroup;
+			children = (
+				7348CE311650E69D00D0E921 /* GDataXMLNode.h */,
+				7348CE321650E69D00D0E921 /* GDataXMLNode.m */,
+				7348CE331650E69D00D0E921 /* NSString+XMLExtensions.h */,
+				7348CE341650E69D00D0E921 /* NSString+XMLExtensions.m */,
+				7348CE351650E69D00D0E921 /* XMLRPCConnection.h */,
+				7348CE361650E69D00D0E921 /* XMLRPCConnection.m */,
+				7348CE371650E69D00D0E921 /* XMLRPCEncoder.h */,
+				7348CE381650E69D00D0E921 /* XMLRPCEncoder.m */,
+				7348CE391650E69D00D0E921 /* XMLRPCExtensions.h */,
+				7348CE3A1650E69D00D0E921 /* XMLRPCExtensions.m */,
+				7348CE3B1650E69D00D0E921 /* XMLRPCRequest.h */,
+				7348CE3C1650E69D00D0E921 /* XMLRPCRequest.m */,
+				7348CE3D1650E69D00D0E921 /* XMLRPCResponse.h */,
+				7348CE3E1650E69D00D0E921 /* XMLRPCResponse.m */,
+			);
+			path = "xml-rpc";
 			sourceTree = "<group>";
 		};
 		737BE1801650976800DE3FC3 = {
 			isa = PBXGroup;
 			children = (
-				7348CDF71650AF5A00D0E921 /* xml-rpc */,
+				7348CE0A1650D5F000D0E921 /* WizApi.h */,
+				7348CE0B1650D5F000D0E921 /* WizApi.m */,
+				7348CE301650E69C00D0E921 /* xml-rpc */,
+				7348CE021650C98700D0E921 /* AccountCenter */,
 				7348CDD716509AF800D0E921 /* WizTool */,
 				7348CDD616509ABF00D0E921 /* WizDBManager */,
 				7348CDD516509A9700D0E921 /* WizStruct */,
@@ -228,7 +286,17 @@
 				737BE1A01650976900DE3FC3 /* WIZAppDelegate.m in Sources */,
 				737BE1AC1650976900DE3FC3 /* WIZViewController.m in Sources */,
 				7348CDE016509F1700D0E921 /* WizFileManager.m in Sources */,
-				7348CDFD1650AFB900D0E921 /* NSString+XMLExtensions.m in Sources */,
+				7348CE061650C9C200D0E921 /* WizAccountManager.m in Sources */,
+				7348CE091650C9F600D0E921 /* WizAccount.m in Sources */,
+				7348CE0C1650D5F000D0E921 /* WizApi.m in Sources */,
+				7348CE0F1650D65500D0E921 /* WizDocument.m in Sources */,
+				7348CE3F1650E69D00D0E921 /* GDataXMLNode.m in Sources */,
+				7348CE401650E69D00D0E921 /* NSString+XMLExtensions.m in Sources */,
+				7348CE411650E69D00D0E921 /* XMLRPCConnection.m in Sources */,
+				7348CE421650E69D00D0E921 /* XMLRPCEncoder.m in Sources */,
+				7348CE431650E69D00D0E921 /* XMLRPCExtensions.m in Sources */,
+				7348CE441650E69D00D0E921 /* XMLRPCRequest.m in Sources */,
+				7348CE451650E69D00D0E921 /* XMLRPCResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
